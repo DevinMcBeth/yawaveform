@@ -1,0 +1,10 @@
+# Blocklist all files and subfolders
+/*
+
+# Excluding ...
+!src/
+!.gitignore
+!composer.json
+!composer.lock
+!LICENSE
+!README.md
