@@ -34,6 +34,8 @@ abstract class DataFileReader implements ReaderInterface
         if (!$this->file->isReadable()) {
             throw new FileNotReadable($this->file->getFilename());
         }
+
+        $this->validateFile();
     }
 
     public static function isRemoteFile(string $filepath): bool
@@ -50,4 +52,6 @@ abstract class DataFileReader implements ReaderInterface
     {
         return $this->file;
     }
+
+    abstract protected function validateFile(): void;
 }
