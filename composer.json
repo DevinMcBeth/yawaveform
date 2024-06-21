@@ -1,22 +1,22 @@
 {
-    "name": "devin_mcbeth/yawaveform",
+    "name": "yawaveform/yawaveform",
     "description": "Yet Another Waveform generator",
     "keywords": ["php", "audio", "riff", "wave", "waveform", "pcm"],
-    "type": "project",
-    "require": {
-        "php": "^8.2"
-    },
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Yawaveform\\": "src/"
-        }
-    },
+    "type": "project",
     "authors": [
         {
             "name": "Devin McBeth",
             "email": "chromiem@gmail.com",
             "homepage": "https://github.com/DevinMcBeth"
         }
-    ]
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yawaveform\\": "src/"
+        }
+    }
 }
